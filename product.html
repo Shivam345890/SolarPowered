@@ -1,0 +1,278 @@
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .product-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      color: green;
+      padding: 10px;
+    }
+
+    .product-button {
+      width: 100%;
+      height: 40px;
+      background: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="our">
+        <h1>Welcome to our Products</h1><br>
+        <p>Cloths</p><p>Accessories</p><p>Toys</p><p>Clocks</p><p>Others</p>
+        <h1><br></h1>
+    </div>
+    <div id="featured">
+        <div class="itemf">
+            <div class="imgf"><img src="Images/menjacket.1.webp" alt=""></div>
+            <div class="conf">
+                <div class="pricef">Price <br>&#8377; 1699</div>
+                <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+            </div>
+        </div>
+        <div class="itemf">
+            <div class="imgf"><img src="Images/menjacket.2.webp" alt=""></div>
+            <div class="conf">
+                <div class="pricef">Price <br>&#8377; 3999</div>
+                <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+            </div>
+        </div>
+        <div class="itemf">
+            <div class="imgf"><img src="Images/menshirt.3.webp" alt=""></div>
+            <div class="conf">
+                <div class="pricef">Price <br>&#8377; 2999</div>
+                <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+            </div>
+        </div>
+        <div class="itemf">
+            <div class="imgf"><img src="Images/menshirt.1.webp" alt=""></div>
+            <div class="conf">
+                <div class="pricef">Price <br>&#8377; 3999</div>
+                <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&starf;</div>
+            </div>
+        </div>
+        <div id="featured">
+            <div class="itemf">
+                <div class="imgf"><img src="Images/womenhoodies.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1999</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/womenhoodies.2.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1980</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/womenjacket.2.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1899</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/womenTshirt.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1799</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                </div>
+            </div>
+          
+        </div>
+        <div id="featured">
+            <div class="itemf">
+                <div class="imgf"><img src="Images/formal.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 2399</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/formalboys.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1399</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/menhoodies.2.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 4999</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&starf;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/womenhoodies.3.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1899</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                </div>
+
+            </div>
+            <div id="featured">
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/blancket.1.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 2399</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/blancket.2.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 1399</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/image1 - Copy.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 4999</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&starf;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/image2.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 1899</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                    </div>
+
+                </div>
+        <div id="featured">
+            <div class="itemf">
+                <div class="imgf"><img src="Images/printer.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 23999</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/cctv.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 13999</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/clock.1.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 4999</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&starf;</div>
+                </div>
+            </div>
+            <div class="itemf">
+                <div class="imgf"><img src="Images/clock.2.webp" alt=""></div>
+                <div class="conf">
+                    <div class="pricef">Price <br>&#8377; 1899</div>
+                    <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                </div>
+
+            
+            </div>
+            <div id="featured">
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/shoes.1.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 2399</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/shoes.2.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 1399</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/shoes.3.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 4999</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&starf;</div>
+                    </div>
+                </div>
+                <div class="itemf">
+                    <div class="imgf"><img src="Images/shoes.4.webp" alt=""></div>
+                    <div class="conf">
+                        <div class="pricef">Price <br>&#8377; 1899</div>
+                        <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                    </div>
+
+                </div>
+                <div id="featured">
+                    <div class="itemf">
+                        <div class="imgf"><img src="Images/toys.1.webp" alt=""></div>
+                        <div class="conf">
+                            <div class="pricef">Price <br>&#8377; 2399</div>
+                            <div class="ratef">Rating <br>&starf;&starf;&starf;&star;&star;</div>
+                        </div>
+                    </div>
+                    <div class="itemf">
+                        <div class="imgf"><img src="Images/watch.2.webp" alt=""></div>
+                        <div class="conf">
+                            <div class="pricef">Price <br>&#8377; 13999</div>
+                            <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                        </div>
+                    </div>
+                    <div class="itemf">
+                        <div class="imgf"><img src="Images/led.1.webp" alt=""></div>
+                        <div class="conf">
+                            <div class="pricef">Price <br>&#8377; 49999</div>
+                            <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                        </div>
+                    </div>
+                    <div class="itemf">
+                        <div class="imgf"><img src="Images/inverter.1.webp" alt=""></div>
+                        <div class="conf">
+                            <div class="pricef">Price <br>&#8377; 18999</div>
+                            <div class="ratef">Rating <br>&starf;&starf;&starf;&starf;&star;</div>
+                        </div>
+                
+            
+        
+          
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255,255,255,0.6);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #profileForm {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    <div class="container">
+        <div id="profileForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" readonly>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" readonly>
+
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" readonly>
+
+            <label for="Mobile NO">Mobile NO:</label>
+            <input type="Mobile NO" id="Mobile NO" readonly>
+
+            <label for="Address">Address:</label>
+            <input type="Address" id="Address" readonly>
+
+            <button onclick="editProfile()">Edit Profile</button>
+            <button onclick="saveProfile()" style="display: none;">Save Changes</button>
+        </div>
+    </div>
+
+    <script>
+        function editProfile() {
+            document.getElementById('username').readOnly = false;
+            document.getElementById('email').readOnly = false;
+            document.getElementById('username').focus();
+            document.querySelector('#profileForm button:first-of-type').style.display = 'none';
+            document.querySelector('#profileForm button:last-of-type').style.display = 'block';
+        }
+
+        function saveProfile() {
+            document.getElementById('username').readOnly = true;
+            document.getElementById('email').readOnly = true;
+            document.querySelector('#profileForm button:first-of-type').style.display = 'block';
+            document.querySelector('#profileForm button:last-of-type').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

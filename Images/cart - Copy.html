@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        .cart {
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <section>
+        <div class="item">
+            <h2>Item 1</h2>
+            <p>$19.99</p>
+            <button onclick="addToCart('Item 1', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <h2>Item 2</h2>
+            <p>$29.99</p>
+            <button onclick="addToCart('Item 2', 29.99)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="totalAmount">0.00</span></p>
+    </div>
+
+    <script>
+        let cart = [];
+        let totalAmount = 0;
+
+        function addToCart(itemName, itemPrice) {
+            cart.push({ name: itemName, price: itemPrice });
+            totalAmount += itemPrice;
+
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItemsElement = document.getElementById('cartItems');
+            const totalAmountElement = document.getElementById('totalAmount');
+
+            cartItemsElement.innerHTML = '';
+
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItemsElement.appendChild(listItem);
+            });
+
+            totalAmountElement.textContent = totalAmount.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
